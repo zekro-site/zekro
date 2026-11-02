@@ -3,8 +3,14 @@
 // the token page and every explorer link derive from it. Anything that is not a 0x + 40 hex address is
 // treated as "not launched yet".
 
-/** Contract address of $ZEKRO. "TBA" until the owner publishes it (typed string so a real 0x value drops in). */
-const CA: string = "TBA";
+/** Contract address of $ZEKRO on Robinhood Chain. */
+const CA: string = "0xc171a6d029f79b32a2b10e71a2c5d74e6b0ca404";
+
+/**
+ * Pair the chart link opens on DEXTools: the token's Pons curve while it trades there. After graduation, swap in
+ * the address of the pair DEXTools lists for the pool.
+ */
+export const CHART_PAIR = "0xefc4fce5861c06d9e410a86b45bf5f1b902c3fd4";
 
 /**
  * True once the domain points at this deployment. While false, the production *.vercel.app host is served

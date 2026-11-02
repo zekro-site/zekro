@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BRAND, CHAIN } from "@/config/brand";
+import { BRAND, CHAIN, TOKEN } from "@/config/brand";
 import { CONTRACT_NAMES, CONTRACTS, bookLive } from "@/config/contracts";
 import { pageMeta } from "@/lib/seo";
 
@@ -147,7 +147,7 @@ signal     = keccak256(message) >> 8`}</code></pre>
         </ul>
 
         <h2 id="token">{BRAND.symbol}</h2>
-        <p>{BRAND.symbol} is the project&apos;s token, launching on Pons on {CHAIN.name}. It has no promised value. The circuit, prover and contracts do not read it and do not need it. See <Link href="/token">the token page</Link> for the only address.</p>
+        <p>{BRAND.symbol} is the project&apos;s token, {TOKEN.isLive ? "live" : "launching"} on Pons on {CHAIN.name}. It has no promised value. The circuit, prover and contracts do not read it and do not need it. See <Link href="/token">the token page</Link> for the only address.</p>
 
         <h2 id="roadmap">Planned</h2>
         <p>None of this is live, and we will not say it is until it is.</p>

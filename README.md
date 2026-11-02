@@ -118,7 +118,7 @@ The site offers to add it when you connect.
 
 ## Token
 
-$ZEKRO is the community token of Zekro on Robinhood Chain. Contract address: announced on https://zekro.site at launch. It has no promised value. Utility inside the studio is planned, not built.
+$ZEKRO is the community token of Zekro on Robinhood Chain. Contract address: `0xc171a6d029f79b32a2b10e71a2c5d74e6b0ca404`, live on Pons on Robinhood Chain. It has no promised value. Utility inside the studio is planned, not built.
 
 ## Deploy your own
 

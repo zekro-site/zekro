@@ -1,7 +1,7 @@
 "use client";
 
 import { useChain } from "@/components/providers/ChainProvider";
-import { BRAND, TOKEN, chartUrl } from "@/config/brand";
+import { BRAND, CHART_PAIR, TOKEN, chartUrl } from "@/config/brand";
 import { fmtSupply, usd } from "@/lib/format";
 
 export function TokenFacts() {
@@ -15,7 +15,7 @@ export function TokenFacts() {
     ["Price", m?.priceUsd ? usd(m.priceUsd, 8) : "—"],
     ["Liquidity", m?.liquidityUsd ? usd(m.liquidityUsd) : "—"],
   ];
-  const chart = chartUrl(BRAND.ca);
+  const chart = TOKEN.isLive ? chartUrl(CHART_PAIR) : null;
   return (
     <div className="flex flex-col gap-4">
       <p className="mono-label">Read from chain</p>
